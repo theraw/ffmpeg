@@ -1,19 +1,19 @@
 #!/bin/bash
 # 240p
-#ffmpeg -i video.mkv -s 426:240 -c:v libx264 -c:a aac -ab 64k -b:v 254k -strict -2 -threads 0 240p.mp4
+#ffmpeg -i video.mkv -s 426:240 -c:v libx264 -c:a aac -ab 64k -b:v 254k -threads 0 240p.mp4
 
 # 360p
-#ffmpeg -i video.mkv -s 640x360 -c:v libx264 -c:a aac -ab 64k -b:v 454k -strict -2 -threads 0 360p.mp4
+#ffmpeg -i video.mkv -s 640x360 -c:v libx264 -c:a aac -ab 64k -b:v 454k -threads 0 360p.mp4
 
 # 480p
-#ffmpeg -i video.mkv -s 854:480 -c:v libx264 -c:a aac -ab 64k -b:v 754k -strict -2 -threads 0 480p.mp4
+#ffmpeg -i video.mkv -s 854:480 -c:v libx264 -c:a aac -ab 64k -b:v 754k -threads 0 480p.mp4
 
 # 720p
-#ffmpeg -i video.mkv -s 1280:720 -c:v libx264 -c:a aac -ab 64k -b:v 954k -strict -2 -threads 0 720p.mp4
+#ffmpeg -i video.mkv -s 1280:720 -c:v libx264 -c:a aac -ab 64k -b:v 954k -threads 0 720p.mp4
 
 
 ffmpeg -hide_banner -y -i video.mkv \
-       -s 426:240 -c:v libx264 -c:a aac -ab 64k -b:v 254k -strict -2 -threads 0 240p.mp4 \
-       -s 640x360 -c:v libx264 -c:a aac -ab 64k -b:v 454k -strict -2 -threads 0 360p.mp4 \
-       -s 854:480 -c:v libx264 -c:a aac -ab 64k -b:v 754k -strict -2 -threads 0 480p.mp4 \
-       -s 1280:720 -c:v libx264 -c:a aac -ab 64k -b:v 954k -strict -2 -threads 0 720p.mp4
+       -s 426:240 -c:v libx264 -c:a aac -ab 64k -b:v 254k -threads 0 240p.mp4 \
+       -s 640x360 -c:v libx264 -c:a aac -ab 64k -b:v 454k -threads 0 360p.mp4 \
+       -s 854:480 -c:v libx264 -c:a aac -ab 64k -b:v 754k -threads 0 480p.mp4 \
+       -s 1280:720 -c:v libx264 -c:a aac -ab 64k -b:v 954k -threads 0 720p.mp4
