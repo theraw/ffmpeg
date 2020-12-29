@@ -23,4 +23,4 @@ ffmpeg -hide_banner -y -vsync 0 -hwaccel cuda -hwaccel_output_format cuda -i vid
        -s 426:240 -c:v h264_nvenc -c:a aac -ab 64k -b:v 254k -threads 0 240p.mp4 \
        -s 640x360 -c:v h264_nvenc -c:a aac -ab 64k -b:v 454k -threads 0 360p.mp4 \
        -s 854:480 -c:v h264_nvenc -c:a aac -ab 64k -b:v 754k -threads 0 480p.mp4 \
-       -s 1280:720 -c:v h264_nvenc -c:a aac -ab 64k -b:v 954k -threads 0 720p.mp4
+       -s 1280:720 -c:v h264_nvenc -c:a aac -ab 96k -b:v 954k -threads 0 720p.mp4
